@@ -88,6 +88,10 @@ async def area_search(data: Dict[str, Any]):
 async def jobs_search(data: Dict[str, Any]):
     return await volunteer_mcp_server.handle_request({"tool": "jobs.search", "params": data})
 
+@app.post("/mcp/jobs.list")
+async def jobs_list(data: Dict[str, Any]):
+    return await volunteer_mcp_server.handle_request({"tool": "jobs.list", "params": data})
+
     
 
 if __name__ == "__main__":

@@ -17,6 +17,7 @@ from metrics import MCP_REQUESTS_TOTAL, MCP_ERRORS_TOTAL, MCP_TOOL_DURATION_MS
 from job_search import job_search
 from volunteer_ranker import volunteer_ranker
 from volunteer_storage import volunteer_storage
+from education_storage import save_jobs
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -37,6 +38,7 @@ class VolunteerMCPServer:
             "volunteer.area_search": self._area_search,
             "education.search": self._education_search,
             "jobs.search": self._jobs_search,
+            "jobs.list": self._jobs_list,
         }
         self.stats = {
             "requests": 0,
@@ -173,7 +175,43 @@ class VolunteerMCPServer:
         return {"success": True, "by_area": results}
 
     async def _jobs_search(self, params: Dict[str, Any]) -> Dict[str, Any]:
-        return await job_search.search(params)
+        res = await job_search.search(params)
+        # Persistir headlines y enriched como postings
+        items = []
+        items.extend(res.get("headlines", []))
+        items.extend(res.get("enriched", []))
+        saved = save_jobs(items)
+        res["saved_jobs"] = saved
+        # Fallback: si no hay empleos, buscar voluntariados relacionados y devolver links
+        if int(res.get("count", 0)) <= 0:
+            query = params.get("query", "")
+            location = params.get("location", "")
+            try:
+                filters = volunteer_search.parse_prompt(query, location)
+            except Exception:
+                filters = {"location": location} if location else {}
+            try:
+                vol_results = await volunteer_search.search(filters)
+                ranked = await volunteer_ranker.rank(vol_results, filters)
+            except Exception:
+                ranked = []
+            res["fallback_type"] = "volunteer"
+            res["fallback"] = {
+                "filters": filters,
+                "count": len(ranked),
+                "results": ranked[:10]
+            }
+        return res
+
+    async def _jobs_list(self, params: Dict[str, Any]) -> Dict[str, Any]:
+        q = params.get("q")
+        location = params.get("location")
+        area = params.get("area")
+        career = params.get("career")
+        limit = int(params.get("limit", 20))
+        offset = int(params.get("offset", 0))
+        data = list_jobs(q=q, location=location, area=area, career=career, limit=limit, offset=offset)
+        return {"success": True, **data}
 
     
 

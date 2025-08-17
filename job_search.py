@@ -24,7 +24,11 @@ class JobSearch:
             "site:computrabajo.com.mx",
             "site:occ.com.mx",
             "site:indeed.com",
+            "site:indeed.com.mx",
+            "site:mx.indeed.com",
             "site:linkedin.com/jobs",
+            "site:linkedin.com/jobs/search",
+            "site:linkedin.com/jobs-guest",
             "site:glassdoor.com",
             "site:ziprecruiter.com",
             "site:talent.com",
@@ -35,7 +39,11 @@ class JobSearch:
             "site:jobs.lever.co",
             "site:boards.greenhouse.io",
         ]
-        self.keywords = ["empleo", "oferta", "vacante", "trabajo", "remoto", "full time", "medio tiempo"]
+        self.keywords = [
+            "empleo", "oferta", "vacante", "trabajo", "remoto",
+            "full time", "medio tiempo", "junior", "sr", "senior",
+            "cdmx", "mexico", "méxico"
+        ]
 
     def _boost_query(self, query: str, area: str = "", career: str = "", location: str = "") -> str:
         parts = [query]
@@ -157,6 +165,11 @@ class JobSearch:
             keywords=self.keywords,
         )
         headlines = provider.get("results", [])
+        # Fallback: si no hay resultados, relajar dominios y ampliar consulta
+        if not headlines:
+            relaxed_query = " ".join([query, area or "", career or "", location or "", "empleo trabajo vacante"])
+            relaxed_provider = await provider_search.search_boosted(relaxed_query, topK)
+            headlines = relaxed_provider.get("results", [])
 
         # Enriquecer 1–3 URLs top en paralelo
         enriched: List[Dict[str, Any]] = []
