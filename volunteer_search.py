@@ -419,6 +419,37 @@ class VolunteerSearch:
         location = (filters or {}).get("location", "").lower()
         if location:
             mx_norm = [r for r in mx_norm if any(location in loc.lower() for loc in r.get("locations", []))]
+        # aplicar filtro de carreras/áreas si viene: filters.career puede ser lista o string
+        careers_filter = (filters or {}).get("career")
+        if isinstance(careers_filter, str) and careers_filter.strip():
+            careers_filter = [careers_filter.strip().lower()]
+        if isinstance(careers_filter, list) and careers_filter:
+            cf = [str(c).lower() for c in careers_filter]
+            def matches_career(item):
+                item_careers = [str(x).lower() for x in item.get("career", [])]
+                return any(c in item_careers for c in cf)
+            mx_norm = [r for r in mx_norm if matches_career(r)]
+        # aplicar filtro por keywords/q si viene (busca en título/org/detalles)
+        keywords = (filters or {}).get("keywords") or []
+        qtext = (filters or {}).get("q") or ""
+        if isinstance(keywords, str) and keywords.strip():
+            keywords = [keywords]
+        if isinstance(keywords, list) or qtext:
+            keys = []
+            if isinstance(keywords, list):
+                keys.extend([str(k).lower() for k in keywords if str(k).strip()])
+            if isinstance(qtext, str) and qtext.strip():
+                keys.extend([t.lower() for t in qtext.split() if t.strip()])
+            if keys:
+                def text_of(item: Dict[str, Any]) -> str:
+                    parts = [
+                        item.get("title") or item.get("position") or "",
+                        item.get("org") or "",
+                        item.get("details") or "",
+                        ", ".join(item.get("career", [])) if isinstance(item.get("career"), list) else str(item.get("career", "")),
+                    ]
+                    return " ".join([str(p).lower() for p in parts])
+                mx_norm = [r for r in mx_norm if any(k in text_of(r) for k in keys)]
         # Cache per-MX filter
         key = f"vol.mx:{json.dumps(filters, sort_keys=True, ensure_ascii=False)}"
         redis_cache.set_swr(key, mx_norm, ttl_seconds=1800, swr_seconds=600)

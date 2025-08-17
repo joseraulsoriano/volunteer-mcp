@@ -1,0 +1,2602 @@
+{
+  "Aguascalientes": [
+    {
+      "name": "Universidad Autónoma de Aguascalientes",
+      "type": "publica",
+      "position": {
+        "lat": 21.9100469,
+        "lng": -102.3154096
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Aguascalientes",
+      "type": "publica",
+      "position": {
+        "lat": 21.8782197,
+        "lng": -102.2629172
+      }
+    },
+    {
+      "name": "Instituto Tecnológico El Llano Aguascalientes",
+      "type": "publica",
+      "position": {
+        "lat": 21.8189483,
+        "lng": -102.1008225
+      }
+    },
+    {
+      "name": "Pabellón de Arteaga Institute of Technology",
+      "type": "publica",
+      "position": {
+        "lat": 22.161362,
+        "lng": -102.268966
+      }
+    },
+    {
+      "name": "Universidad Británica/Campus Chalet Douglas",
+      "type": "privada",
+      "position": {
+        "lat": 21.8856062,
+        "lng": -102.2902599
+      }
+    },
+    {
+      "name": "Cuauhtémoc University, Campus Aguascalientes",
+      "type": "privada",
+      "position": {
+        "lat": 21.9400871,
+        "lng": -102.300871
+      }
+    },
+    {
+      "name": "UNICLA Universidad Contemporánea de las Américas Plantel Aguascalientes",
+      "type": "privada",
+      "position": {
+        "lat": 21.9340804,
+        "lng": -102.323082
+      }
+    },
+    {
+      "name": "UNIVERSIDAD UNITSA",
+      "type": "privada",
+      "position": {
+        "lat": 21.914592,
+        "lng": -102.2786054
+      }
+    },
+    {
+      "name": "Universidad de Santa Fe",
+      "type": "privada",
+      "position": {
+        "lat": 21.8982389,
+        "lng": -102.3543878
+      }
+    }
+  ],
+  "Baja California": [
+    {
+      "name": "Autonomous University of Baja California",
+      "type": "publica",
+      "position": {
+        "lat": 32.5308326,
+        "lng": -116.9665423
+      }
+    },
+    {
+      "name": "Universidad Politécnica de Baja California",
+      "type": "publica",
+      "position": {
+        "lat": 32.6258087,
+        "lng": -115.3769912
+      }
+    },
+    {
+      "name": "Autonomous University of Baja California, Tijuana",
+      "type": "publica",
+      "position": {
+        "lat": 32.4349683,
+        "lng": -116.675085
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Baja California - UABC Campus Valle Dorado",
+      "type": "publica",
+      "position": {
+        "lat": 31.825138,
+        "lng": -116.5983726
+      }
+    },
+    {
+      "name": "Universidad Tecnológica de Tijuana",
+      "type": "publica",
+      "position": {
+        "lat": 32.46094900000001,
+        "lng": -116.825415
+      }
+    },
+    {
+      "name": "Universidad de Tijuana, Campus Ensenada",
+      "type": "privada",
+      "position": {
+        "lat": 31.8714052,
+        "lng": -116.656164
+      }
+    },
+    {
+      "name": "Universidad Iberoamericana Tijuana",
+      "type": "privada",
+      "position": {
+        "lat": 32.5186438,
+        "lng": -117.100958
+      }
+    },
+    {
+      "name": "Center for University Studies of Baja California",
+      "type": "privada",
+      "position": {
+        "lat": 32.392016,
+        "lng": -117.050017
+      }
+    },
+    {
+      "name": "UNIPAC",
+      "type": "privada",
+      "position": {
+        "lat": 32.5269801,
+        "lng": -117.0227895
+      }
+    },
+    {
+      "name": "Autonomous University of Baja California",
+      "type": "privada",
+      "position": {
+        "lat": 32.5308326,
+        "lng": -116.9665423
+      }
+    }
+  ],
+  "Baja California Sur": [
+    {
+      "name": "Universidad Autónoma de Baja California Sur - UABCS",
+      "type": "publica",
+      "position": {
+        "lat": 24.1030941,
+        "lng": -110.3157196
+      }
+    },
+    {
+      "name": "UABCS Los Cabos",
+      "type": "publica",
+      "position": {
+        "lat": 22.896155,
+        "lng": -109.9132811
+      }
+    },
+    {
+      "name": "Autonomous University of Baja California",
+      "type": "publica",
+      "position": {
+        "lat": 32.66343,
+        "lng": -115.4688256
+      }
+    },
+    {
+      "name": "Autonomous University of Baja California Sur",
+      "type": "publica",
+      "position": {
+        "lat": 27.9819976,
+        "lng": -114.0198569
+      }
+    },
+    {
+      "name": "Universidad Mundial",
+      "type": "publica",
+      "position": {
+        "lat": 24.141976,
+        "lng": -110.3330112
+      }
+    },
+    {
+      "name": "University of Tijuana",
+      "type": "privada",
+      "position": {
+        "lat": 24.0994664,
+        "lng": -110.3115656
+      }
+    },
+    {
+      "name": "Universidad Mundial",
+      "type": "privada",
+      "position": {
+        "lat": 24.141976,
+        "lng": -110.3330112
+      }
+    },
+    {
+      "name": "Universidad del Golfo de California",
+      "type": "privada",
+      "position": {
+        "lat": 22.8890041,
+        "lng": -109.9156833
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Baja California Sur - UABCS",
+      "type": "privada",
+      "position": {
+        "lat": 24.1030941,
+        "lng": -110.3157196
+      }
+    },
+    {
+      "name": "UABCS Los Cabos",
+      "type": "privada",
+      "position": {
+        "lat": 22.896155,
+        "lng": -109.9132811
+      }
+    }
+  ],
+  "Campeche": [
+    {
+      "name": "Autonomus University of Campeche",
+      "type": "publica",
+      "position": {
+        "lat": 19.827903,
+        "lng": -90.5565084
+      }
+    },
+    {
+      "name": "Campus 6 de Investigación de la Universidad Autónoma de Campeche",
+      "type": "publica",
+      "position": {
+        "lat": 19.8020077,
+        "lng": -90.50427409999999
+      }
+    },
+    {
+      "name": "Instituto Tecnologico De Estudios Superiores \"Rene Descartes\"",
+      "type": "publica",
+      "position": {
+        "lat": 19.8420586,
+        "lng": -90.5083885
+      }
+    },
+    {
+      "name": "Universidad Mundo Maya",
+      "type": "publica",
+      "position": {
+        "lat": 19.8810442,
+        "lng": -90.4780397
+      }
+    },
+    {
+      "name": "Universidad Vizcaya De Las Américas - Campus Campeche",
+      "type": "publica",
+      "position": {
+        "lat": 19.8236102,
+        "lng": -90.54296289999999
+      }
+    },
+    {
+      "name": "Universidad Vizcaya De Las Américas - Campus Campeche",
+      "type": "privada",
+      "position": {
+        "lat": 19.8236102,
+        "lng": -90.54296289999999
+      }
+    },
+    {
+      "name": "UNID Campus Campeche",
+      "type": "privada",
+      "position": {
+        "lat": 19.832304,
+        "lng": -90.5568237
+      }
+    },
+    {
+      "name": "IEU Universidad - Campus Campeche",
+      "type": "privada",
+      "position": {
+        "lat": 19.8493894,
+        "lng": -90.5352652
+      }
+    },
+    {
+      "name": "Instituto Tecnologico De Estudios Superiores \"Rene Descartes\"",
+      "type": "privada",
+      "position": {
+        "lat": 19.8420586,
+        "lng": -90.5083885
+      }
+    },
+    {
+      "name": "UVG Campus Campeche",
+      "type": "privada",
+      "position": {
+        "lat": 19.8433655,
+        "lng": -90.5315476
+      }
+    }
+  ],
+  "Coahuila": [
+    {
+      "name": "Ciudad Universitaria, Universidad Autónoma De Coahuila Campus Torreón",
+      "type": "publica",
+      "position": {
+        "lat": 25.5299712,
+        "lng": -103.3314677
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Coahuila",
+      "type": "publica",
+      "position": {
+        "lat": 25.4397296,
+        "lng": -100.9922338
+      }
+    },
+    {
+      "name": "Autonomous University of Coahuila, Unit Camporredondo",
+      "type": "publica",
+      "position": {
+        "lat": 25.4289665,
+        "lng": -100.9766616
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Coahuila Campus Lic. Oscar Villegas Rico",
+      "type": "publica",
+      "position": {
+        "lat": 25.4503469,
+        "lng": -101.0247369
+      }
+    },
+    {
+      "name": "UAdeC University City (Arteaga Campus)",
+      "type": "publica",
+      "position": {
+        "lat": 25.4436619,
+        "lng": -100.85999
+      }
+    },
+    {
+      "name": "UVM Campus Saltillo",
+      "type": "privada",
+      "position": {
+        "lat": 25.477422,
+        "lng": -100.963074
+      }
+    },
+    {
+      "name": "Campus Centro - Universidad Autónoma de Durango Campus Monclova",
+      "type": "privada",
+      "position": {
+        "lat": 26.9041693,
+        "lng": -101.427638
+      }
+    },
+    {
+      "name": "Universidad Iberoamericana Torreón",
+      "type": "privada",
+      "position": {
+        "lat": 25.6102836,
+        "lng": -103.4015267
+      }
+    },
+    {
+      "name": "Autonomous University of La Laguna",
+      "type": "privada",
+      "position": {
+        "lat": 25.5761896,
+        "lng": -103.4333801
+      }
+    },
+    {
+      "name": "UANE",
+      "type": "privada",
+      "position": {
+        "lat": 25.4558133,
+        "lng": -100.9686229
+      }
+    }
+  ],
+  "Colima": [
+    {
+      "name": "Universidad de Colima",
+      "type": "publica",
+      "position": {
+        "lat": 19.2476156,
+        "lng": -103.6973714
+      }
+    },
+    {
+      "name": "Technological Institute of Colima",
+      "type": "publica",
+      "position": {
+        "lat": 19.2619141,
+        "lng": -103.7236743
+      }
+    },
+    {
+      "name": "Colima University Campus Coquimatlán",
+      "type": "publica",
+      "position": {
+        "lat": 19.2114509,
+        "lng": -103.8039311
+      }
+    },
+    {
+      "name": "Facultad de Ciencias de la Educación",
+      "type": "publica",
+      "position": {
+        "lat": 19.2512845,
+        "lng": -103.7006142
+      }
+    },
+    {
+      "name": "National Pedagogical University",
+      "type": "publica",
+      "position": {
+        "lat": 19.2749203,
+        "lng": -103.7352143
+      }
+    },
+    {
+      "name": "Univer Colima University",
+      "type": "privada",
+      "position": {
+        "lat": 19.2553635,
+        "lng": -103.7241426
+      }
+    },
+    {
+      "name": "Universidad de Baja California (Campus Colima)",
+      "type": "privada",
+      "position": {
+        "lat": 19.2360633,
+        "lng": -103.71946
+      }
+    },
+    {
+      "name": "Universidad de las Américas y el Caribe",
+      "type": "privada",
+      "position": {
+        "lat": 19.2453774,
+        "lng": -103.7281905
+      }
+    },
+    {
+      "name": "Universidad de Colima",
+      "type": "privada",
+      "position": {
+        "lat": 19.2476156,
+        "lng": -103.6973714
+      }
+    },
+    {
+      "name": "universidad vizcaya de las americas",
+      "type": "privada",
+      "position": {
+        "lat": 19.2608528,
+        "lng": -103.6911087
+      }
+    }
+  ],
+  "Chiapas": [
+    {
+      "name": "Universidad Politécnica de Chiapas",
+      "type": "publica",
+      "position": {
+        "lat": 16.6150191,
+        "lng": -93.09076209999999
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Chiapas",
+      "type": "publica",
+      "position": {
+        "lat": 16.7535917,
+        "lng": -93.15586429999999
+      }
+    },
+    {
+      "name": "University of Science and Arts of Chiapas",
+      "type": "publica",
+      "position": {
+        "lat": 16.7762075,
+        "lng": -93.1213052
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Chiapas Campus IV",
+      "type": "publica",
+      "position": {
+        "lat": 14.8933028,
+        "lng": -92.2737009
+      }
+    },
+    {
+      "name": "Maya University, Campus Tuxtla",
+      "type": "publica",
+      "position": {
+        "lat": 16.7500566,
+        "lng": -93.13701420000001
+      }
+    },
+    {
+      "name": "Maya University, Campus Tuxtla",
+      "type": "privada",
+      "position": {
+        "lat": 16.7500566,
+        "lng": -93.13701420000001
+      }
+    },
+    {
+      "name": "Private University of Southern Mexico (UPSUM)",
+      "type": "privada",
+      "position": {
+        "lat": 16.762541,
+        "lng": -93.15621499999999
+      }
+    },
+    {
+      "name": "Catholic University of Chiapas",
+      "type": "privada",
+      "position": {
+        "lat": 16.7515449,
+        "lng": -93.085762
+      }
+    },
+    {
+      "name": "USAM Universidad San Marcos [Plantel Tuxtla]",
+      "type": "privada",
+      "position": {
+        "lat": 16.7538042,
+        "lng": -93.09396509999999
+      }
+    },
+    {
+      "name": "Universidad Maya Campus Tapachula",
+      "type": "privada",
+      "position": {
+        "lat": 14.8838191,
+        "lng": -92.27784609999999
+      }
+    }
+  ],
+  "Chihuahua": [
+    {
+      "name": "Universidad Politecnica de Chihuahua",
+      "type": "publica",
+      "position": {
+        "lat": 28.5884816,
+        "lng": -106.1358313
+      }
+    },
+    {
+      "name": "UNIVER Chihuahua",
+      "type": "publica",
+      "position": {
+        "lat": 28.6640226,
+        "lng": -106.1107026
+      }
+    },
+    {
+      "name": "Rectory of the Universidad Autonoma de Chihuahua",
+      "type": "publica",
+      "position": {
+        "lat": 28.638217,
+        "lng": -106.072354
+      }
+    },
+    {
+      "name": "Technological University of Southern Chihuahua",
+      "type": "publica",
+      "position": {
+        "lat": 28.6612552,
+        "lng": -106.0357114
+      }
+    },
+    {
+      "name": "Chihuahua Institute of Technology II",
+      "type": "publica",
+      "position": {
+        "lat": 28.7084798,
+        "lng": -106.1044149
+      }
+    },
+    {
+      "name": "Claustro Universitario de Chihuahua",
+      "type": "privada",
+      "position": {
+        "lat": 28.655371,
+        "lng": -106.080276
+      }
+    },
+    {
+      "name": "UVM Campus Chihuahua | Universidad en Chihuahua",
+      "type": "privada",
+      "position": {
+        "lat": 28.5856547,
+        "lng": -106.1569909
+      }
+    },
+    {
+      "name": "UNEA Campus Chihuahua",
+      "type": "privada",
+      "position": {
+        "lat": 28.7246844,
+        "lng": -106.1457058
+      }
+    },
+    {
+      "name": "Universidad De Durango Campus Chihuahua Facultad De Medicina",
+      "type": "privada",
+      "position": {
+        "lat": 28.6509767,
+        "lng": -106.1543817
+      }
+    },
+    {
+      "name": "Universidad de Chihuahua",
+      "type": "privada",
+      "position": {
+        "lat": 28.6637638,
+        "lng": -106.0966182
+      }
+    }
+  ],
+  "Ciudad de México": [
+    {
+      "name": "Universidad Autónoma de la Ciudad de México",
+      "type": "publica",
+      "position": {
+        "lat": 19.4164502,
+        "lng": -99.1519462
+      }
+    },
+    {
+      "name": "National Autonomous University of Mexico",
+      "type": "publica",
+      "position": {
+        "lat": 19.3273024,
+        "lng": -99.184647
+      }
+    },
+    {
+      "name": "UACM Del Valle",
+      "type": "publica",
+      "position": {
+        "lat": 19.3745796,
+        "lng": -99.1716039
+      }
+    },
+    {
+      "name": "Universidad Autónoma Metropolitana Xochimilco Campus",
+      "type": "publica",
+      "position": {
+        "lat": 19.3042084,
+        "lng": -99.10301539999999
+      }
+    },
+    {
+      "name": "Universidad Nacional Autónoma de México",
+      "type": "publica",
+      "position": {
+        "lat": 19.332795,
+        "lng": -99.1876103
+      }
+    },
+    {
+      "name": "Centro Universitario Internacional",
+      "type": "privada",
+      "position": {
+        "lat": 19.3661668,
+        "lng": -99.1922165
+      }
+    },
+    {
+      "name": "UVM Campus Coyoacán | Universidad en Coyoacán",
+      "type": "privada",
+      "position": {
+        "lat": 19.3116618,
+        "lng": -99.13979429999999
+      }
+    },
+    {
+      "name": "University of London campus Querétaro",
+      "type": "privada",
+      "position": {
+        "lat": 19.4150973,
+        "lng": -99.1584704
+      }
+    },
+    {
+      "name": "Universidad Iberoamericana Ciudad de México",
+      "type": "privada",
+      "position": {
+        "lat": 19.3694072,
+        "lng": -99.2640157
+      }
+    },
+    {
+      "name": "Universidad La Salle",
+      "type": "privada",
+      "position": {
+        "lat": 19.4087094,
+        "lng": -99.1813074
+      }
+    }
+  ],
+  "Durango": [
+    {
+      "name": "Universidad Juárez del Estado de Durango",
+      "type": "publica",
+      "position": {
+        "lat": 24.0143332,
+        "lng": -104.6894124
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Durango",
+      "type": "publica",
+      "position": {
+        "lat": 24.0465522,
+        "lng": -104.6321784
+      }
+    },
+    {
+      "name": "UJED - Edificio Central",
+      "type": "publica",
+      "position": {
+        "lat": 24.0227555,
+        "lng": -104.6706873
+      }
+    },
+    {
+      "name": "Universidad Politécnica de Durango",
+      "type": "publica",
+      "position": {
+        "lat": 24.0222768,
+        "lng": -104.5538881
+      }
+    },
+    {
+      "name": "UJED - Faculty of Law and Political Science",
+      "type": "publica",
+      "position": {
+        "lat": 24.0227834,
+        "lng": -104.6786338
+      }
+    },
+    {
+      "name": "Center for Studies Univer Durango",
+      "type": "privada",
+      "position": {
+        "lat": 24.0228468,
+        "lng": -104.6645173
+      }
+    },
+    {
+      "name": "Autonomous University of Durango Campus CDMX",
+      "type": "privada",
+      "position": {
+        "lat": 19.4810177,
+        "lng": -99.11750119999999
+      }
+    },
+    {
+      "name": "Universidad José Vasconcelos",
+      "type": "privada",
+      "position": {
+        "lat": 24.0295005,
+        "lng": -104.6757669
+      }
+    },
+    {
+      "name": "Universidad Vizcaya de las Américas - Durango",
+      "type": "privada",
+      "position": {
+        "lat": 24.0310105,
+        "lng": -104.687913
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Durango",
+      "type": "privada",
+      "position": {
+        "lat": 24.0465522,
+        "lng": -104.6321784
+      }
+    }
+  ],
+  "Guanajuato": [
+    {
+      "name": "ITESI. Instituto Tecnológico Superior de Irapuato",
+      "type": "publica",
+      "position": {
+        "lat": 20.7533643,
+        "lng": -101.3310071
+      }
+    },
+    {
+      "name": "Technology Institute Roque",
+      "type": "publica",
+      "position": {
+        "lat": 20.5813874,
+        "lng": -100.8268118
+      }
+    },
+    {
+      "name": "Instituto Tecnológico del Sur de Guanajuato",
+      "type": "publica",
+      "position": {
+        "lat": 20.1394083,
+        "lng": -101.1507207
+      }
+    },
+    {
+      "name": "Technological Institute of León",
+      "type": "publica",
+      "position": {
+        "lat": 21.1092261,
+        "lng": -101.6274982
+      }
+    },
+    {
+      "name": "Technological Institute of Celaya",
+      "type": "publica",
+      "position": {
+        "lat": 20.5385565,
+        "lng": -100.8192253
+      }
+    },
+    {
+      "name": "Universidad Iberoamericana León",
+      "type": "privada",
+      "position": {
+        "lat": 21.1286678,
+        "lng": -101.625903
+      }
+    },
+    {
+      "name": "Universidad de Guanajuato, Campus León",
+      "type": "privada",
+      "position": {
+        "lat": 21.0604221,
+        "lng": -101.5717833
+      }
+    },
+    {
+      "name": "LATINA DE MEXICO UNIVERSITY",
+      "type": "privada",
+      "position": {
+        "lat": 20.510641,
+        "lng": -100.780886
+      }
+    },
+    {
+      "name": "University of Guanajuato",
+      "type": "privada",
+      "position": {
+        "lat": 21.017372,
+        "lng": -101.2529249
+      }
+    },
+    {
+      "name": "Universidad Incarnate Word Campus Bajío",
+      "type": "privada",
+      "position": {
+        "lat": 20.7467975,
+        "lng": -101.3402862
+      }
+    }
+  ],
+  "Guerrero": [
+    {
+      "name": "Centro Universitario UAGro",
+      "type": "publica",
+      "position": {
+        "lat": 17.5369204,
+        "lng": -99.495612
+      }
+    },
+    {
+      "name": "Acapulco Institute of Technology",
+      "type": "publica",
+      "position": {
+        "lat": 16.8595076,
+        "lng": -99.81111159999999
+      }
+    },
+    {
+      "name": "Polytechnic University of the State of Guerrero",
+      "type": "publica",
+      "position": {
+        "lat": 18.4422978,
+        "lng": -99.5849824
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Cd. Altamirano",
+      "type": "publica",
+      "position": {
+        "lat": 18.3705437,
+        "lng": -100.6802166
+      }
+    },
+    {
+      "name": "Autonomous University of Guerrero School of Medicine",
+      "type": "publica",
+      "position": {
+        "lat": 16.8725858,
+        "lng": -99.8861519
+      }
+    },
+    {
+      "name": "Universidad Latinoamericana Mexico (ULAM)",
+      "type": "privada",
+      "position": {
+        "lat": 17.5338855,
+        "lng": -99.4895375
+      }
+    },
+    {
+      "name": "Universidad Latina de Guerrero",
+      "type": "privada",
+      "position": {
+        "lat": 16.8679469,
+        "lng": -99.8719878
+      }
+    },
+    {
+      "name": "Universidad del Valle de Guerrero",
+      "type": "privada",
+      "position": {
+        "lat": 17.5572853,
+        "lng": -99.5046997
+      }
+    },
+    {
+      "name": "CESGRO",
+      "type": "privada",
+      "position": {
+        "lat": 17.5453622,
+        "lng": -99.5000925
+      }
+    },
+    {
+      "name": "Univer University Guerrero",
+      "type": "privada",
+      "position": {
+        "lat": 16.8644455,
+        "lng": -99.8800246
+      }
+    }
+  ],
+  "Hidalgo": [
+    {
+      "name": "Autonomous University of the State of Hidalgo",
+      "type": "publica",
+      "position": {
+        "lat": 20.1245406,
+        "lng": -98.796916
+      }
+    },
+    {
+      "name": "Universidad Politécnica Metropolitana de Hidalgo",
+      "type": "publica",
+      "position": {
+        "lat": 19.9457605,
+        "lng": -98.8899993
+      }
+    },
+    {
+      "name": "Escuela Superior de Tizayuca UAEH",
+      "type": "publica",
+      "position": {
+        "lat": 19.8646017,
+        "lng": -98.96920689999999
+      }
+    },
+    {
+      "name": "Institute of Social Sciences and Humanities",
+      "type": "publica",
+      "position": {
+        "lat": 20.1217462,
+        "lng": -98.7966594
+      }
+    },
+    {
+      "name": "Polytechnic University of Pachuca",
+      "type": "publica",
+      "position": {
+        "lat": 19.9798144,
+        "lng": -98.6846703
+      }
+    },
+    {
+      "name": "Universidad Privada Del Centro",
+      "type": "privada",
+      "position": {
+        "lat": 20.1240437,
+        "lng": -98.75892379999999
+      }
+    },
+    {
+      "name": "Centro Hidalguense de Estudios Superiores (CENHIES)",
+      "type": "privada",
+      "position": {
+        "lat": 20.1010898,
+        "lng": -98.7645266
+      }
+    },
+    {
+      "name": "Iberomexicana University of Hidalgo",
+      "type": "privada",
+      "position": {
+        "lat": 20.1144042,
+        "lng": -98.7498233
+      }
+    },
+    {
+      "name": "Centro Universitario Hidalguense",
+      "type": "privada",
+      "position": {
+        "lat": 20.1249216,
+        "lng": -98.7520986
+      }
+    },
+    {
+      "name": "Centro Universitario Siglo XXI",
+      "type": "privada",
+      "position": {
+        "lat": 20.1028918,
+        "lng": -98.75968309999999
+      }
+    }
+  ],
+  "Jalisco": [
+    {
+      "name": "University of Guadalajara",
+      "type": "publica",
+      "position": {
+        "lat": 20.6747257,
+        "lng": -103.3589506
+      }
+    },
+    {
+      "name": "CUTONALA Centro Universitario de Tonalá - UDG",
+      "type": "publica",
+      "position": {
+        "lat": 20.5666667,
+        "lng": -103.2286111
+      }
+    },
+    {
+      "name": "Universidad Marista de Guadalajara",
+      "type": "publica",
+      "position": {
+        "lat": 20.635241,
+        "lng": -103.4063944
+      }
+    },
+    {
+      "name": "Centro Universitario de Ciencias Biológicas y Agropecuarias (CUCBA)",
+      "type": "publica",
+      "position": {
+        "lat": 20.7465489,
+        "lng": -103.5137524
+      }
+    },
+    {
+      "name": "Technological University of Jalisco",
+      "type": "publica",
+      "position": {
+        "lat": 20.6175867,
+        "lng": -103.3549825
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Guadalajara",
+      "type": "privada",
+      "position": {
+        "lat": 20.6946969,
+        "lng": -103.4181787
+      }
+    },
+    {
+      "name": "ITESO, Universidad Jesuita de Guadalajara",
+      "type": "privada",
+      "position": {
+        "lat": 20.6083796,
+        "lng": -103.4146601
+      }
+    },
+    {
+      "name": "Universidad del Valle de Atemajac",
+      "type": "privada",
+      "position": {
+        "lat": 20.6597542,
+        "lng": -103.4187245
+      }
+    },
+    {
+      "name": "Universidad Marista de Guadalajara",
+      "type": "privada",
+      "position": {
+        "lat": 20.635241,
+        "lng": -103.4063944
+      }
+    },
+    {
+      "name": "Guadalajara Universidad Panamericana",
+      "type": "privada",
+      "position": {
+        "lat": 20.68263,
+        "lng": -103.4419702
+      }
+    }
+  ],
+  "Estado de México": [
+    {
+      "name": "Autonomous University of Mexico State",
+      "type": "publica",
+      "position": {
+        "lat": 19.2839612,
+        "lng": -99.67798499999999
+      }
+    },
+    {
+      "name": "Centro Universitario UAEM Ecatepec",
+      "type": "publica",
+      "position": {
+        "lat": 19.5982362,
+        "lng": -99.0574544
+      }
+    },
+    {
+      "name": "Universidad Estatal del Valle de Ecatepec",
+      "type": "publica",
+      "position": {
+        "lat": 19.5131773,
+        "lng": -99.03957729999999
+      }
+    },
+    {
+      "name": "Polytechnic University of the Valley of Mexico",
+      "type": "publica",
+      "position": {
+        "lat": 19.6421532,
+        "lng": -99.1275974
+      }
+    },
+    {
+      "name": "UIEM",
+      "type": "publica",
+      "position": {
+        "lat": 19.714041,
+        "lng": -99.94004199999999
+      }
+    },
+    {
+      "name": "Universidad Privada del Estado",
+      "type": "privada",
+      "position": {
+        "lat": 19.5522293,
+        "lng": -98.88204669999999
+      }
+    },
+    {
+      "name": "Universidad Privada del Estado de México | Campus Toluca",
+      "type": "privada",
+      "position": {
+        "lat": 19.3184228,
+        "lng": -99.6424459
+      }
+    },
+    {
+      "name": "Universidad Privada del Estado de México",
+      "type": "privada",
+      "position": {
+        "lat": 19.7078906,
+        "lng": -98.9699725
+      }
+    },
+    {
+      "name": "Universidad Privada del Oriente del Estado de México",
+      "type": "privada",
+      "position": {
+        "lat": 19.3688094,
+        "lng": -98.9523285
+      }
+    },
+    {
+      "name": "Cuautitlan Izcalli University, S.C.",
+      "type": "privada",
+      "position": {
+        "lat": 19.6596517,
+        "lng": -99.2216799
+      }
+    }
+  ],
+  "Michoacán": [
+    {
+      "name": "Universidad Nacional Autónoma de México Campus Morelia",
+      "type": "publica",
+      "position": {
+        "lat": 19.6483119,
+        "lng": -101.2300242
+      }
+    },
+    {
+      "name": "Universidad Michoacana de San Nicolás de Hidalgo",
+      "type": "publica",
+      "position": {
+        "lat": 19.6883768,
+        "lng": -101.2032763
+      }
+    },
+    {
+      "name": "Ciudad Universitaria",
+      "type": "publica",
+      "position": {
+        "lat": 19.6877224,
+        "lng": -101.2016917
+      }
+    },
+    {
+      "name": "Universidad de la Ciénaga del Estado de Michoacán de Ocampo",
+      "type": "publica",
+      "position": {
+        "lat": 20.0144917,
+        "lng": -102.7436015
+      }
+    },
+    {
+      "name": "Technological University of Morelia",
+      "type": "publica",
+      "position": {
+        "lat": 19.7255562,
+        "lng": -101.1642276
+      }
+    },
+    {
+      "name": "Universidad de Morelia",
+      "type": "privada",
+      "position": {
+        "lat": 19.7013527,
+        "lng": -101.1774328
+      }
+    },
+    {
+      "name": "Universidad Privada de Michoacán",
+      "type": "privada",
+      "position": {
+        "lat": 19.6963296,
+        "lng": -101.1604371
+      }
+    },
+    {
+      "name": "International University Jefferson",
+      "type": "privada",
+      "position": {
+        "lat": 19.6732959,
+        "lng": -101.1692813
+      }
+    },
+    {
+      "name": "Universidad Privada de Michoacán | Campus Uruapan",
+      "type": "privada",
+      "position": {
+        "lat": 19.427206,
+        "lng": -102.0404395
+      }
+    },
+    {
+      "name": "Private University of Michoacán",
+      "type": "privada",
+      "position": {
+        "lat": 19.5116328,
+        "lng": -101.6149827
+      }
+    }
+  ],
+  "Morelos": [
+    {
+      "name": "Universidad Autónoma del Estado de Morelos - UAEM",
+      "type": "publica",
+      "position": {
+        "lat": 18.9818941,
+        "lng": -99.2396883
+      }
+    },
+    {
+      "name": "Universidad Nacional Autónoma de México Campus Morelos",
+      "type": "publica",
+      "position": {
+        "lat": 18.9827436,
+        "lng": -99.2345556
+      }
+    },
+    {
+      "name": "Universidad Politecnica del Estado de Morelos",
+      "type": "publica",
+      "position": {
+        "lat": 18.8897805,
+        "lng": -99.14030509999999
+      }
+    },
+    {
+      "name": "Escuela de Estudios Superiores de Yautepec (EESY-UAEM)",
+      "type": "publica",
+      "position": {
+        "lat": 18.8841225,
+        "lng": -99.05374259999999
+      }
+    },
+    {
+      "name": "Institute of Education Sciences",
+      "type": "publica",
+      "position": {
+        "lat": 18.979677,
+        "lng": -99.23571299999999
+      }
+    },
+    {
+      "name": "Universidad Privada del Estado de Morelos",
+      "type": "privada",
+      "position": {
+        "lat": 18.9272079,
+        "lng": -99.23984519999999
+      }
+    },
+    {
+      "name": "Universidad Latina, Cuernavaca Campus",
+      "type": "privada",
+      "position": {
+        "lat": 18.9620929,
+        "lng": -99.22913120000001
+      }
+    },
+    {
+      "name": "Universidad de Investigación e Innovación de México",
+      "type": "privada",
+      "position": {
+        "lat": 18.9332792,
+        "lng": -99.2182069
+      }
+    },
+    {
+      "name": "ULA Campus Cuernavaca",
+      "type": "privada",
+      "position": {
+        "lat": 18.9293211,
+        "lng": -99.2215806
+      }
+    },
+    {
+      "name": "Universidad La Salle Cuernavaca",
+      "type": "privada",
+      "position": {
+        "lat": 18.952035,
+        "lng": -99.2327493
+      }
+    }
+  ],
+  "Nayarit": [
+    {
+      "name": "Technological University of Nayarit",
+      "type": "publica",
+      "position": {
+        "lat": 21.4240756,
+        "lng": -104.8983803
+      }
+    },
+    {
+      "name": "TecNM campus Bahía de Banderas",
+      "type": "publica",
+      "position": {
+        "lat": 20.7645779,
+        "lng": -105.3711023
+      }
+    },
+    {
+      "name": "Universidad Politécnica Del Estado de Nayarit (Oficinas)",
+      "type": "publica",
+      "position": {
+        "lat": 21.5127921,
+        "lng": -104.8133398
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Guadalajara",
+      "type": "publica",
+      "position": {
+        "lat": 21.4998001,
+        "lng": -104.8818671
+      }
+    },
+    {
+      "name": "Univer University Campus Nayarit",
+      "type": "publica",
+      "position": {
+        "lat": 21.5040367,
+        "lng": -104.8886951
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Guadalajara",
+      "type": "privada",
+      "position": {
+        "lat": 21.4998001,
+        "lng": -104.8818671
+      }
+    },
+    {
+      "name": "Universidad Nueva Galicia",
+      "type": "privada",
+      "position": {
+        "lat": 21.503292,
+        "lng": -104.884731
+      }
+    },
+    {
+      "name": "Univer University Campus Nayarit",
+      "type": "privada",
+      "position": {
+        "lat": 21.5040367,
+        "lng": -104.8886951
+      }
+    },
+    {
+      "name": "Instituto Universitario Metropolitano",
+      "type": "privada",
+      "position": {
+        "lat": 21.506494,
+        "lng": -104.895607
+      }
+    },
+    {
+      "name": "Universidad Del Valle de Matatipac (UNIVAM)",
+      "type": "privada",
+      "position": {
+        "lat": 21.4868009,
+        "lng": -104.8872358
+      }
+    }
+  ],
+  "Nuevo León": [
+    {
+      "name": "Universidad Autónoma de Nuevo León",
+      "type": "publica",
+      "position": {
+        "lat": 25.726406,
+        "lng": -100.3119038
+      }
+    },
+    {
+      "name": "citizen University of Nuevo Leon",
+      "type": "publica",
+      "position": {
+        "lat": 25.717464,
+        "lng": -100.357084
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Nuevo León",
+      "type": "publica",
+      "position": {
+        "lat": 25.664011,
+        "lng": -100.243225
+      }
+    },
+    {
+      "name": "Pedro de Gante University",
+      "type": "privada",
+      "position": {
+        "lat": 25.691288,
+        "lng": -100.2624642
+      }
+    },
+    {
+      "name": "Montemorelos University",
+      "type": "privada",
+      "position": {
+        "lat": 25.1925719,
+        "lng": -99.8455628
+      }
+    },
+    {
+      "name": "Universidad UNICA",
+      "type": "privada",
+      "position": {
+        "lat": 25.6707418,
+        "lng": -100.3242895
+      }
+    },
+    {
+      "name": "Universidad Pedro de Gante",
+      "type": "privada",
+      "position": {
+        "lat": 25.7207241,
+        "lng": -100.2295303
+      }
+    },
+    {
+      "name": "Universidad Lux",
+      "type": "privada",
+      "position": {
+        "lat": 25.6830607,
+        "lng": -100.331042
+      }
+    }
+  ],
+  "Oaxaca": [
+    {
+      "name": "Benito Juárez Autonomous University of Oaxaca",
+      "type": "publica",
+      "position": {
+        "lat": 17.0503666,
+        "lng": -96.7124453
+      }
+    },
+    {
+      "name": "Technologic Institute of Oaxaca",
+      "type": "publica",
+      "position": {
+        "lat": 17.0778324,
+        "lng": -96.74437479999999
+      }
+    },
+    {
+      "name": "Universidad del Mar",
+      "type": "publica",
+      "position": {
+        "lat": 15.8899448,
+        "lng": -97.0753365
+      }
+    },
+    {
+      "name": "Technological University of the Central Valley of Oaxaca",
+      "type": "publica",
+      "position": {
+        "lat": 16.8185018,
+        "lng": -96.7980719
+      }
+    },
+    {
+      "name": "Technological University of the Mixteca",
+      "type": "publica",
+      "position": {
+        "lat": 17.8268983,
+        "lng": -97.8043393
+      }
+    },
+    {
+      "name": "Universidad del Golfo de México",
+      "type": "privada",
+      "position": {
+        "lat": 17.1038227,
+        "lng": -96.7509917
+      }
+    },
+    {
+      "name": "Mesoamericana University, Campus Oaxaca",
+      "type": "privada",
+      "position": {
+        "lat": 17.0632309,
+        "lng": -96.7251345
+      }
+    },
+    {
+      "name": "UNIVERSIDAD CESEEO CAMPUS OAXACA DE JUÁREZ",
+      "type": "privada",
+      "position": {
+        "lat": 17.0695807,
+        "lng": -96.7138744
+      }
+    },
+    {
+      "name": "Centro Universitario Casandoo",
+      "type": "privada",
+      "position": {
+        "lat": 17.081693,
+        "lng": -96.7607994
+      }
+    },
+    {
+      "name": "UNIVERSIDAD DE LOS ÁNGELES EN OAXACA/CENTRO DE ESTUDIOS Y CONSULTORÍA EDUCATIVA LOS ÁNGELES S. C.",
+      "type": "privada",
+      "position": {
+        "lat": 17.0526921,
+        "lng": -96.69823850000002
+      }
+    }
+  ],
+  "Puebla": [
+    {
+      "name": "Universidad Politécnica Metropolitana de Puebla",
+      "type": "publica",
+      "position": {
+        "lat": 19.001813,
+        "lng": -98.25219279999999
+      }
+    },
+    {
+      "name": "Escuela Superior de Ciencias y Humanidades",
+      "type": "publica",
+      "position": {
+        "lat": 19.1034145,
+        "lng": -98.2596923
+      }
+    },
+    {
+      "name": "USEP - Universidad de la Salud del Estado de Puebla, Ex-Hospicio.",
+      "type": "publica",
+      "position": {
+        "lat": 19.0473186,
+        "lng": -98.20402709999999
+      }
+    },
+    {
+      "name": "Universidad Tecnológica de Puebla",
+      "type": "publica",
+      "position": {
+        "lat": 19.0583869,
+        "lng": -98.15195089999999
+      }
+    },
+    {
+      "name": "Universidad del Valle de Puebla",
+      "type": "publica",
+      "position": {
+        "lat": 19.018128,
+        "lng": -98.21578699999999
+      }
+    },
+    {
+      "name": "Universidad Hispana de Puebla",
+      "type": "privada",
+      "position": {
+        "lat": 19.0332559,
+        "lng": -98.206445
+      }
+    },
+    {
+      "name": "Universidad del Valle de Puebla",
+      "type": "privada",
+      "position": {
+        "lat": 19.018128,
+        "lng": -98.21578699999999
+      }
+    },
+    {
+      "name": "Universidad Anáhuac Puebla",
+      "type": "privada",
+      "position": {
+        "lat": 19.0207168,
+        "lng": -98.2634047
+      }
+    },
+    {
+      "name": "Universidad de los Ángeles",
+      "type": "privada",
+      "position": {
+        "lat": 19.0465462,
+        "lng": -98.2070498
+      }
+    },
+    {
+      "name": "Universidad Panamericana de Puebla",
+      "type": "privada",
+      "position": {
+        "lat": 19.0418908,
+        "lng": -98.22302739999999
+      }
+    }
+  ],
+  "Querétaro": [
+    {
+      "name": "Universidad Autónoma de Querétaro",
+      "type": "publica",
+      "position": {
+        "lat": 20.5919462,
+        "lng": -100.4102905
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Querétaro",
+      "type": "publica",
+      "position": {
+        "lat": 20.593298,
+        "lng": -100.4057863
+      }
+    },
+    {
+      "name": "Universidad Politécnica de Querétaro",
+      "type": "publica",
+      "position": {
+        "lat": 20.5462443,
+        "lng": -100.2748026
+      }
+    },
+    {
+      "name": "UAQ Campus Aeropuerto",
+      "type": "publica",
+      "position": {
+        "lat": 20.62447,
+        "lng": -100.3686571
+      }
+    },
+    {
+      "name": "Technological University of Querétaro",
+      "type": "publica",
+      "position": {
+        "lat": 20.6539445,
+        "lng": -100.4060938
+      }
+    },
+    {
+      "name": "UNICEQ",
+      "type": "privada",
+      "position": {
+        "lat": 20.613496,
+        "lng": -100.4194953
+      }
+    },
+    {
+      "name": "International University of Queretaro UNIQ",
+      "type": "privada",
+      "position": {
+        "lat": 20.619288,
+        "lng": -100.4014091
+      }
+    },
+    {
+      "name": "Universidad del Valle de Atemajac - UNIVA Plantel Querétaro",
+      "type": "privada",
+      "position": {
+        "lat": 20.5982301,
+        "lng": -100.3710585
+      }
+    },
+    {
+      "name": "Universidad Marista de Querétaro",
+      "type": "privada",
+      "position": {
+        "lat": 20.6014181,
+        "lng": -100.3853829
+      }
+    },
+    {
+      "name": "UNITEC campus Querétaro",
+      "type": "privada",
+      "position": {
+        "lat": 20.6101428,
+        "lng": -100.4182316
+      }
+    }
+  ],
+  "Quintana Roo": [
+    {
+      "name": "Universidad Autónoma Del Estado de Quintana Roo",
+      "type": "publica",
+      "position": {
+        "lat": 18.5230649,
+        "lng": -88.2709592
+      }
+    },
+    {
+      "name": "Polytechnic University of Quintana Roo",
+      "type": "publica",
+      "position": {
+        "lat": 21.180986,
+        "lng": -86.90656
+      }
+    },
+    {
+      "name": "UQROO Campus Cancún",
+      "type": "publica",
+      "position": {
+        "lat": 21.1603299,
+        "lng": -86.9275928
+      }
+    },
+    {
+      "name": "Technological University of Cancun",
+      "type": "publica",
+      "position": {
+        "lat": 21.0495167,
+        "lng": -86.8469238
+      }
+    },
+    {
+      "name": "University of Quintana Roo",
+      "type": "publica",
+      "position": {
+        "lat": 20.6850868,
+        "lng": -87.0658253
+      }
+    },
+    {
+      "name": "Universidad Riviera",
+      "type": "privada",
+      "position": {
+        "lat": 20.6599767,
+        "lng": -87.0966076
+      }
+    },
+    {
+      "name": "Universidad Anáhuac Cancún",
+      "type": "privada",
+      "position": {
+        "lat": 21.0616927,
+        "lng": -86.8447482
+      }
+    },
+    {
+      "name": "Aztlan University Cancún",
+      "type": "privada",
+      "position": {
+        "lat": 21.1369143,
+        "lng": -86.8767316
+      }
+    },
+    {
+      "name": "Universidad Maya Campus Cancún",
+      "type": "privada",
+      "position": {
+        "lat": 21.1405873,
+        "lng": -86.83409499999999
+      }
+    },
+    {
+      "name": "UNADE - Universidad Americana de Europa",
+      "type": "privada",
+      "position": {
+        "lat": 21.1485154,
+        "lng": -86.82149509999999
+      }
+    }
+  ],
+  "San Luis Potosí": [
+    {
+      "name": "Universidad Tecnológica de San Luis Potosí (UTSLP)",
+      "type": "publica",
+      "position": {
+        "lat": 22.2201232,
+        "lng": -100.9294921
+      }
+    },
+    {
+      "name": "Autonomous University of San Luis Potosi",
+      "type": "publica",
+      "position": {
+        "lat": 22.1438854,
+        "lng": -101.0141268
+      }
+    },
+    {
+      "name": "Universidad Politécnica de San Luis Potosí",
+      "type": "publica",
+      "position": {
+        "lat": 22.1223377,
+        "lng": -100.9842534
+      }
+    },
+    {
+      "name": "Central building UASLP",
+      "type": "publica",
+      "position": {
+        "lat": 22.1525371,
+        "lng": -100.9780562
+      }
+    },
+    {
+      "name": "Instituto Tecnológico Superior de San Luis Potosí",
+      "type": "publica",
+      "position": {
+        "lat": 22.0692294,
+        "lng": -100.8678863
+      }
+    },
+    {
+      "name": "UCEM- Universidad del Centro de México",
+      "type": "privada",
+      "position": {
+        "lat": 22.1545804,
+        "lng": -101.0014453
+      }
+    },
+    {
+      "name": "Universidad Potosina",
+      "type": "privada",
+      "position": {
+        "lat": 22.1486229,
+        "lng": -100.9720156
+      }
+    },
+    {
+      "name": "Marista University of San Luis Potosi",
+      "type": "privada",
+      "position": {
+        "lat": 22.1584278,
+        "lng": -101.0444782
+      }
+    },
+    {
+      "name": "UVM Campus San Luis Potosí | Universidad en San Luis Potosí",
+      "type": "privada",
+      "position": {
+        "lat": 22.1712627,
+        "lng": -101.0084762
+      }
+    },
+    {
+      "name": "NEUUNI",
+      "type": "privada",
+      "position": {
+        "lat": 22.1348705,
+        "lng": -100.9907927
+      }
+    }
+  ],
+  "Sinaloa": [
+    {
+      "name": "State Pedagogical University of Sinaloa",
+      "type": "publica",
+      "position": {
+        "lat": 24.8278835,
+        "lng": -107.4204844
+      }
+    },
+    {
+      "name": "Polytechnic University of Sinaloa",
+      "type": "publica",
+      "position": {
+        "lat": 23.2655943,
+        "lng": -106.3742573
+      }
+    },
+    {
+      "name": "Instituto Estatal de Ciencias Penales y Seguridad Pública",
+      "type": "publica",
+      "position": {
+        "lat": 24.7804584,
+        "lng": -107.4955444
+      }
+    },
+    {
+      "name": "Polytechnic University of Évora Valley",
+      "type": "publica",
+      "position": {
+        "lat": 25.1194267,
+        "lng": -108.0104064
+      }
+    },
+    {
+      "name": "Mexico International University",
+      "type": "publica",
+      "position": {
+        "lat": 24.8172921,
+        "lng": -107.381051
+      }
+    },
+    {
+      "name": "Mexico International University",
+      "type": "privada",
+      "position": {
+        "lat": 24.8172921,
+        "lng": -107.381051
+      }
+    },
+    {
+      "name": "Universidad de San Miguel - Culiacán, Sinaloa, México",
+      "type": "privada",
+      "position": {
+        "lat": 24.8192788,
+        "lng": -107.4050662
+      }
+    },
+    {
+      "name": "Universidad Luxx Sinaloa",
+      "type": "privada",
+      "position": {
+        "lat": 25.7987769,
+        "lng": -108.992638
+      }
+    },
+    {
+      "name": "State Pedagogical University of Sinaloa",
+      "type": "privada",
+      "position": {
+        "lat": 24.8278835,
+        "lng": -107.4204844
+      }
+    },
+    {
+      "name": "Universidad San Sebastián",
+      "type": "privada",
+      "position": {
+        "lat": 24.7972879,
+        "lng": -107.406852
+      }
+    }
+  ],
+  "Sonora": [
+    {
+      "name": "Sonora State University",
+      "type": "publica",
+      "position": {
+        "lat": 29.1210611,
+        "lng": -110.9618701
+      }
+    },
+    {
+      "name": "Universidad de Sonora",
+      "type": "publica",
+      "position": {
+        "lat": 29.0834761,
+        "lng": -110.9603621
+      }
+    },
+    {
+      "name": "Universidad de la Sierra",
+      "type": "publica",
+      "position": {
+        "lat": 29.8236834,
+        "lng": -109.6781609
+      }
+    },
+    {
+      "name": "Universidad Tecnológica de Hermosillo",
+      "type": "publica",
+      "position": {
+        "lat": 29.0092068,
+        "lng": -110.9012003
+      }
+    },
+    {
+      "name": "Technological University of Nogales",
+      "type": "publica",
+      "position": {
+        "lat": 31.2341213,
+        "lng": -110.9801101
+      }
+    },
+    {
+      "name": "UVM Campus Hermosillo",
+      "type": "privada",
+      "position": {
+        "lat": 29.1484276,
+        "lng": -110.9081927
+      }
+    },
+    {
+      "name": "Durango Santander University",
+      "type": "privada",
+      "position": {
+        "lat": 29.1708239,
+        "lng": -110.9149846
+      }
+    },
+    {
+      "name": "Sonoran University Center",
+      "type": "privada",
+      "position": {
+        "lat": 29.1205959,
+        "lng": -110.9572525
+      }
+    },
+    {
+      "name": "University Kino, A.C.",
+      "type": "privada",
+      "position": {
+        "lat": 29.0773716,
+        "lng": -110.9375884
+      }
+    },
+    {
+      "name": "Universidad UNILÍDER",
+      "type": "privada",
+      "position": {
+        "lat": 29.1255989,
+        "lng": -110.9131774
+      }
+    }
+  ],
+  "Tabasco": [
+    {
+      "name": "Universidad Politécnica del Centro",
+      "type": "publica",
+      "position": {
+        "lat": 17.8097247,
+        "lng": -92.9242767
+      }
+    },
+    {
+      "name": "Universidad Juárez Autónoma de Tabasco",
+      "type": "publica",
+      "position": {
+        "lat": 18.0079722,
+        "lng": -92.924745
+      }
+    },
+    {
+      "name": "Universidad Juárez Autónoma de Tabasco Division Academica De Ciencias Biologicas",
+      "type": "publica",
+      "position": {
+        "lat": 17.9896728,
+        "lng": -92.97310309999999
+      }
+    },
+    {
+      "name": "Villahermosa Technological Institute",
+      "type": "publica",
+      "position": {
+        "lat": 18.0230511,
+        "lng": -92.90364029999999
+      }
+    },
+    {
+      "name": "Universidad Juárez Autónoma de Tabasco - Unidad Chontalpa",
+      "type": "publica",
+      "position": {
+        "lat": 18.0755678,
+        "lng": -93.16613199999999
+      }
+    },
+    {
+      "name": "Universidad Mundo Maya Campus Villahermosa",
+      "type": "privada",
+      "position": {
+        "lat": 17.9621787,
+        "lng": -93.0111939
+      }
+    },
+    {
+      "name": "UAG Campus Tabasco",
+      "type": "privada",
+      "position": {
+        "lat": 18.0190732,
+        "lng": -92.9988429
+      }
+    },
+    {
+      "name": "Universidad Olmeca",
+      "type": "privada",
+      "position": {
+        "lat": 17.967251,
+        "lng": -92.8057575
+      }
+    },
+    {
+      "name": "Universidad Más Educación y Enseñanza",
+      "type": "privada",
+      "position": {
+        "lat": 17.9955065,
+        "lng": -92.9343919
+      }
+    },
+    {
+      "name": "UVM Campus Villahermosa",
+      "type": "privada",
+      "position": {
+        "lat": 17.9717262,
+        "lng": -92.9477553
+      }
+    }
+  ],
+  "Tamaulipas": [
+    {
+      "name": "Autonomous University of Tamaulipas",
+      "type": "publica",
+      "position": {
+        "lat": 23.7325086,
+        "lng": -99.1446325
+      }
+    },
+    {
+      "name": "UAT Tampico Madero",
+      "type": "publica",
+      "position": {
+        "lat": 22.2746541,
+        "lng": -97.8608357
+      }
+    },
+    {
+      "name": "Universidad Tecnológica de Tamaulipas Norte",
+      "type": "publica",
+      "position": {
+        "lat": 26.0510005,
+        "lng": -98.2605056
+      }
+    },
+    {
+      "name": "UAT Victoria University Center",
+      "type": "publica",
+      "position": {
+        "lat": 23.71823,
+        "lng": -99.1523742
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Tamaulipas - CUS",
+      "type": "publica",
+      "position": {
+        "lat": 22.276083,
+        "lng": -97.8629928
+      }
+    },
+    {
+      "name": "UVM Tampico - Universidad del Valle de México",
+      "type": "privada",
+      "position": {
+        "lat": 22.267119,
+        "lng": -97.861052
+      }
+    },
+    {
+      "name": "Instituto de Estudios Superior de Tamaulipas A.C.",
+      "type": "privada",
+      "position": {
+        "lat": 22.3235021,
+        "lng": -97.8798327
+      }
+    },
+    {
+      "name": "Autonomous University of Tamaulipas",
+      "type": "privada",
+      "position": {
+        "lat": 23.7325086,
+        "lng": -99.1446325
+      }
+    },
+    {
+      "name": "Tamaulipeca University",
+      "type": "privada",
+      "position": {
+        "lat": 26.0888944,
+        "lng": -98.28254369999999
+      }
+    },
+    {
+      "name": "Gulf University",
+      "type": "privada",
+      "position": {
+        "lat": 22.2184831,
+        "lng": -97.8581523
+      }
+    }
+  ],
+  "Tlaxcala": [
+    {
+      "name": "Universidad Autónoma de Tlaxcala",
+      "type": "publica",
+      "position": {
+        "lat": 19.3018472,
+        "lng": -98.24237699999999
+      }
+    },
+    {
+      "name": "Polytechnic University of Tlaxcala",
+      "type": "publica",
+      "position": {
+        "lat": 19.2328341,
+        "lng": -98.2389092
+      }
+    },
+    {
+      "name": "Universidad Popular Del Estado De Tlaxcala",
+      "type": "publica",
+      "position": {
+        "lat": 19.3136139,
+        "lng": -98.24068
+      }
+    },
+    {
+      "name": "Universidad Nacional Autónoma de México: SUAyED Tlaxcala",
+      "type": "publica",
+      "position": {
+        "lat": 19.3653092,
+        "lng": -98.13155599999999
+      }
+    },
+    {
+      "name": "Universidad Politécnica de Tlaxcala Región Poniente",
+      "type": "publica",
+      "position": {
+        "lat": 19.4806135,
+        "lng": -98.36963209999999
+      }
+    },
+    {
+      "name": "University of the Plateau",
+      "type": "privada",
+      "position": {
+        "lat": 19.3120682,
+        "lng": -98.210801
+      }
+    },
+    {
+      "name": "Universidad Metropolitana de Tlaxcala",
+      "type": "privada",
+      "position": {
+        "lat": 19.3894409,
+        "lng": -98.1289525
+      }
+    },
+    {
+      "name": "Universidad Popular Del Estado De Tlaxcala",
+      "type": "privada",
+      "position": {
+        "lat": 19.3136139,
+        "lng": -98.24068
+      }
+    },
+    {
+      "name": "Fundación Técnica y Humanistica de Tlaxcala",
+      "type": "privada",
+      "position": {
+        "lat": 19.407806,
+        "lng": -98.1149926
+      }
+    },
+    {
+      "name": "Universidad Nacional Autónoma de México: SUAyED Tlaxcala",
+      "type": "privada",
+      "position": {
+        "lat": 19.3653092,
+        "lng": -98.13155599999999
+      }
+    }
+  ],
+  "Veracruz": [
+    {
+      "name": "UV - Universidad Veracruzana",
+      "type": "publica",
+      "position": {
+        "lat": 19.1601805,
+        "lng": -96.11231959999999
+      }
+    },
+    {
+      "name": "TecNM - Campus Instituto Tecnológico de Veracruz",
+      "type": "publica",
+      "position": {
+        "lat": 19.2002521,
+        "lng": -96.159607
+      }
+    },
+    {
+      "name": "Universidad Cristóbal Colón",
+      "type": "publica",
+      "position": {
+        "lat": 19.1547396,
+        "lng": -96.1333775
+      }
+    },
+    {
+      "name": "National Pedagogical University-UPN, Veracruz",
+      "type": "publica",
+      "position": {
+        "lat": 19.1919174,
+        "lng": -96.1272735
+      }
+    },
+    {
+      "name": "UV - Ciencias y Técnicas de la Comunicación",
+      "type": "publica",
+      "position": {
+        "lat": 19.1606385,
+        "lng": -96.1128375
+      }
+    },
+    {
+      "name": "Universidad UGMEX Veracruz",
+      "type": "privada",
+      "position": {
+        "lat": 19.1691734,
+        "lng": -96.1307681
+      }
+    },
+    {
+      "name": "Universidad Cristóbal Colón",
+      "type": "privada",
+      "position": {
+        "lat": 19.1547396,
+        "lng": -96.1333775
+      }
+    },
+    {
+      "name": "Universidad del Tercer Milenio",
+      "type": "privada",
+      "position": {
+        "lat": 19.1704823,
+        "lng": -96.1177074
+      }
+    },
+    {
+      "name": "UNIMEX Plantel Veracruz - Universidad Mexicana",
+      "type": "privada",
+      "position": {
+        "lat": 19.1835845,
+        "lng": -96.1317756
+      }
+    },
+    {
+      "name": "Universidad de las Naciones",
+      "type": "privada",
+      "position": {
+        "lat": 19.1905707,
+        "lng": -96.12696079999999
+      }
+    }
+  ],
+  "Yucatán": [
+    {
+      "name": "Autonomous University of Yucatan",
+      "type": "publica",
+      "position": {
+        "lat": 20.9695848,
+        "lng": -89.6229628
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Conkal",
+      "type": "publica",
+      "position": {
+        "lat": 21.079153,
+        "lng": -89.49933620000002
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Mérida",
+      "type": "publica",
+      "position": {
+        "lat": 21.0124706,
+        "lng": -89.62216219999999
+      }
+    },
+    {
+      "name": "Centro de Formación Profesional de Yucatán UM Mérida",
+      "type": "publica",
+      "position": {
+        "lat": 20.9718318,
+        "lng": -89.6150023
+      }
+    },
+    {
+      "name": "Universidad Politécnica de Yucatán",
+      "type": "publica",
+      "position": {
+        "lat": 20.9888381,
+        "lng": -89.7373046
+      }
+    },
+    {
+      "name": "Universidad Privada de la Península | Campus Mérida",
+      "type": "privada",
+      "position": {
+        "lat": 20.9819802,
+        "lng": -89.6508747
+      }
+    },
+    {
+      "name": "Marista University of Mérida",
+      "type": "privada",
+      "position": {
+        "lat": 21.0517486,
+        "lng": -89.6240322
+      }
+    },
+    {
+      "name": "EBC - Campus Mérida",
+      "type": "privada",
+      "position": {
+        "lat": 21.0286769,
+        "lng": -89.6296571
+      }
+    },
+    {
+      "name": "College of the Mayab University Studies",
+      "type": "privada",
+      "position": {
+        "lat": 20.971394,
+        "lng": -89.6394418
+      }
+    },
+    {
+      "name": "Universidad Modelo",
+      "type": "privada",
+      "position": {
+        "lat": 21.0285163,
+        "lng": -89.5677716
+      }
+    }
+  ],
+  "Zacatecas": [
+    {
+      "name": "Universidad Autónoma de Zacatecas",
+      "type": "publica",
+      "position": {
+        "lat": 22.7708615,
+        "lng": -102.6439208
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Zacatecas \"Francisco García Salinas\"",
+      "type": "publica",
+      "position": {
+        "lat": 22.7733437,
+        "lng": -102.5752096
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Durango Campus Zacatecas",
+      "type": "publica",
+      "position": {
+        "lat": 22.7729508,
+        "lng": -102.6082698
+      }
+    },
+    {
+      "name": "Technological University of the State of Zacatecas",
+      "type": "publica",
+      "position": {
+        "lat": 22.7173916,
+        "lng": -102.486864
+      }
+    },
+    {
+      "name": "Instituto Tecnológico de Zacatecas",
+      "type": "publica",
+      "position": {
+        "lat": 22.775729,
+        "lng": -102.627009
+      }
+    },
+    {
+      "name": "UNID Campus Zacatecas",
+      "type": "privada",
+      "position": {
+        "lat": 22.7678891,
+        "lng": -102.5149064
+      }
+    },
+    {
+      "name": "Universidad Autónoma de Durango Campus Zacatecas",
+      "type": "privada",
+      "position": {
+        "lat": 22.7729508,
+        "lng": -102.6082698
+      }
+    },
+    {
+      "name": "Universidad de la Vera-Cruz",
+      "type": "privada",
+      "position": {
+        "lat": 22.7571344,
+        "lng": -102.5381758
+      }
+    },
+    {
+      "name": "IZEU Zacatecano Institute for University Studies",
+      "type": "privada",
+      "position": {
+        "lat": 22.7555063,
+        "lng": -102.5443195
+      }
+    },
+    {
+      "name": "Universidad del Desarrollo Profesional Plantel Zacatecas",
+      "type": "privada",
+      "position": {
+        "lat": 22.7635729,
+        "lng": -102.5526876
+      }
+    }
+  ]
+}

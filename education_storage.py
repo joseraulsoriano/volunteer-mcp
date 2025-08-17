@@ -4,6 +4,7 @@ from typing import Any, Dict, List, Optional
 
 from sqlalchemy import create_engine, Integer, Float, String, DateTime, ForeignKey
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship, sessionmaker
+from sqlalchemy.exc import IntegrityError
 from datetime import datetime
 
 
@@ -74,22 +75,32 @@ def save_jobs(items: List[Dict[str, Any]]) -> int:
             link = str(it.get("link") or it.get("url") or "")
             if not link:
                 continue
-            exists = session.query(JobPosting).filter_by(link=link).first()
-            if exists:
-                continue
+            # construir objeto
+            posted_at = None
+            pts = it.get("posted_at")
+            if isinstance(pts, str):
+                try:
+                    posted_at = datetime.fromisoformat(pts)
+                except Exception:
+                    posted_at = None
             job = JobPosting(
-                title=it.get("title") or it.get("position") or "",
-                organization=it.get("organization") or it.get("org"),
-                location=it.get("location"),
-                area=(it.get("area") or "")[:128] if it.get("area") else None,
-                career=(it.get("career") or "")[:128] if isinstance(it.get("career"), str) else (",".join(it.get("career", []))[:128] if it.get("career") else None),
+                title=(it.get("title") or it.get("position") or "").strip(),
+                organization=(it.get("organization") or it.get("org") or None),
+                location=it.get("location") or None,
+                area=((it.get("area") or "")[:128] or None) if it.get("area") else None,
+                career=(it.get("career") if isinstance(it.get("career"), str) else ",".join(it.get("career", []))) or None,
                 link=link,
-                source=it.get("source"),
-                posted_at=datetime.fromisoformat(it.get("posted_at")) if it.get("posted_at") else None,
+                source=it.get("source") or None,
+                posted_at=posted_at,
             )
-            session.add(job)
-            saved += 1
-        session.commit()
+            try:
+                session.add(job)
+                session.commit()
+                saved += 1
+            except IntegrityError:
+                session.rollback()
+                # Duplicado por UNIQUE(link): ignorar
+                continue
     return saved
 
 

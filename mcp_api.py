@@ -92,6 +92,14 @@ async def jobs_search(data: Dict[str, Any]):
 async def jobs_list(data: Dict[str, Any]):
     return await volunteer_mcp_server.handle_request({"tool": "jobs.list", "params": data})
 
+@app.post("/mcp/learning.plan.save")
+async def learning_plan_save(data: Dict[str, Any]):
+    return await volunteer_mcp_server.handle_request({"tool": "learning.plan.save", "params": data})
+
+@app.post("/mcp/learning.plan.get")
+async def learning_plan_get(data: Dict[str, Any]):
+    return await volunteer_mcp_server.handle_request({"tool": "learning.plan.get", "params": data})
+
     
 
 if __name__ == "__main__":

@@ -18,6 +18,7 @@ from job_search import job_search
 from volunteer_ranker import volunteer_ranker
 from volunteer_storage import volunteer_storage
 from education_storage import save_jobs
+from learning_storage import learning_storage
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -39,6 +40,8 @@ class VolunteerMCPServer:
             "education.search": self._education_search,
             "jobs.search": self._jobs_search,
             "jobs.list": self._jobs_list,
+            "learning.plan.save": self._learning_plan_save,
+            "learning.plan.get": self._learning_plan_get,
         }
         self.stats = {
             "requests": 0,
@@ -212,6 +215,15 @@ class VolunteerMCPServer:
         offset = int(params.get("offset", 0))
         data = list_jobs(q=q, location=location, area=area, career=career, limit=limit, offset=offset)
         return {"success": True, **data}
+
+    async def _learning_plan_save(self, params: Dict[str, Any]) -> Dict[str, Any]:
+        profile_id = params.get("profile_id") or params.get("user_id") or "default"
+        plan = params.get("plan") or {}
+        return learning_storage.save_plan(profile_id, plan)
+
+    async def _learning_plan_get(self, params: Dict[str, Any]) -> Dict[str, Any]:
+        profile_id = params.get("profile_id") or params.get("user_id") or "default"
+        return learning_storage.get_plan(profile_id)
 
     
 
