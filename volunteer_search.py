@@ -10,6 +10,7 @@ import asyncio
 import json
 from redis_cache import redis_cache
 from provider_search import provider_search
+from urllib.parse import urlparse, urlunparse
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +28,11 @@ class VolunteerSearch:
             self._source_worldpackers,
             self._source_ayuda_en_accion,
             self._source_voluntariado_net
+        ]
+        # Modo MX solo: Worldpackers + noticias (Brave)
+        self.mx_sources = [
+            self._source_worldpackers,
+            self._source_brave_mx_news,
         ]
 
         self.mx_locations = [
@@ -72,6 +78,8 @@ class VolunteerSearch:
                 results.extend(items)
             except Exception as e:
                 logger.debug(f"source error: {e}")
+        # Dedupe y merge por enlace canónico
+        results = self._dedupe_and_merge(results)
         # Save cache (30 min TTL, 10 min SWR)
         redis_cache.set_swr(key, results, ttl_seconds=1800, swr_seconds=600)
         return results
@@ -265,7 +273,7 @@ class VolunteerSearch:
             "hours": "variable",
             "score": 0.56,
             "source": url,
-            "link": url,
+            "link": self._canonical_url(url),
             "images": images,
             "details": details,
             "salary": salary_or_benefits or "No remunerado / N/A",
@@ -288,6 +296,7 @@ class VolunteerSearch:
             if not href:
                 continue
             full = f"https://worldpackers.com{href}" if href.startswith("/") else href
+            full = self._canonical_url(full)
             if "/positions/" not in full:
                 continue
             if full in seen:
@@ -383,7 +392,7 @@ class VolunteerSearch:
             if not self._is_mexico_item(it):
                 continue
             title = it.get("role") or it.get("org") or "Voluntariado"
-            link = it.get("link") or it.get("source")
+            link = self._canonical_url(it.get("link") or it.get("source"))
             loc = it.get("location", "México")
             career = self._infer_career(it)
             salary = self._extract_salary(it)
@@ -412,8 +421,17 @@ class VolunteerSearch:
         return any(safe in src or safe in link for safe in self.safe_sources)
 
     async def collect_mexico(self, filters: Dict[str, Any]) -> List[Dict[str, Any]]:
-        # ignoramos filtros de ubicación en la captura, traemos todo y filtramos por México localmente
-        raw = await self.search({})
+        # Modo MX estricto: solo Worldpackers + noticias (Brave)
+        tasks = [src(filters) for src in self.mx_sources]
+        raw: List[Dict[str, Any]] = []
+        for coro in asyncio.as_completed(tasks):
+            try:
+                items = await coro
+                raw.extend(items)
+            except Exception:
+                continue
+        # dedupe por enlace canónico
+        raw = self._dedupe_and_merge(raw)
         mx_norm = self._normalize_mx(raw)
         # aplicar filtro de ubicación puntual si viene
         location = (filters or {}).get("location", "").lower()
@@ -481,7 +499,7 @@ class VolunteerSearch:
             glob_norm: List[Dict[str, Any]] = []
             for it in raw_global:
                 title = it.get("role") or it.get("org") or "Voluntariado"
-                link = it.get("link") or it.get("source")
+                link = self._canonical_url(it.get("link") or it.get("source"))
                 loc = it.get("location", "Global")
                 career = self._infer_career(it)
                 salary = self._extract_salary(it)
@@ -597,6 +615,60 @@ class VolunteerSearch:
                     return await r.text()
             except Exception:
                 return ""
+
+    # -------- Utils: canonicalización y deduplicación --------
+    def _canonical_url(self, url: Optional[str]) -> str:
+        if not url:
+            return ""
+        try:
+            p = urlparse(url)
+            scheme = p.scheme or "https"
+            netloc = (p.netloc or "").lower()
+            path = p.path or ""
+            # quitar trailing slash excepto en raíz
+            if path != "/" and path.endswith("/"):
+                path = path[:-1]
+            # dominios conocidos: descartar query/fragment
+            known = ["worldpackers.com", "workaway.info", "onlinevolunteering.org", "gob.mx", "cruzrojamexicana.org.mx", "techo.org"]
+            if any(host in netloc for host in known):
+                return urlunparse((scheme, netloc, path, "", "", ""))
+            # default: sin fragment, sin query
+            return urlunparse((scheme, netloc, path, p.params, "", ""))
+        except Exception:
+            return str(url).strip()
+
+    def _dedupe_and_merge(self, items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        by_key: Dict[str, Dict[str, Any]] = {}
+        for it in items or []:
+            # usar link canónico; si no hay, clave por org+role
+            link = self._canonical_url(it.get("link") or it.get("source"))
+            if not link:
+                link = f"org:{(it.get('org') or '').strip().lower()}|role:{(it.get('role') or '').strip().lower()}"
+            current = by_key.get(link)
+            if current is None:
+                c = dict(it)
+                c["link"] = link
+                by_key[link] = c
+                continue
+            # fusionar duplicados: elegir mejor por score, unir imágenes y aplicar apply_link si falta
+            def _score(x: Dict[str, Any]) -> float:
+                try:
+                    return float(x.get("rank_score") or x.get("score") or 0.0)
+                except Exception:
+                    return 0.0
+            better = it if _score(it) > _score(current) else current
+            worse = current if better is it else it
+            merged = dict(better)
+            # unir imágenes
+            imgs = list(dict.fromkeys((better.get("images") or []) + (worse.get("images") or [])))
+            if imgs:
+                merged["images"] = imgs
+            # completar campos vacíos
+            for k in ["apply_link", "org", "role", "location", "need", "hours", "salary"]:
+                if (not merged.get(k)) and worse.get(k):
+                    merged[k] = worse.get(k)
+            by_key[link] = merged
+        return list(by_key.values())
 
     # Sources
     async def _source_gob_mx_voluntariado(self, filters: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -802,6 +874,57 @@ class VolunteerSearch:
                         results.append(det)
         except Exception as e:
             logger.debug(f"worldpackers parse error: {e}")
+        return results
+
+    async def _source_brave_mx_news(self, filters: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Resultados generales (noticias, listados) usando Brave sobre México."""
+        queries = [
+            "voluntariado mexico",
+            "voluntariado cdmx",
+            "servicio social mexico voluntariado",
+            "voluntariado ong mexico",
+        ]
+        domains = [
+            "site:worldpackers.com/positions",
+            "site:gob.mx",
+            "site:cruzrojamexicana.org.mx",
+            "site:techo.org",
+            "site:onlinevolunteering.org",
+            "site:voluntariado.net",
+        ]
+        keywords = ["volunt", "méxico", "mexico", "cdmx"]
+        results: List[Dict[str, Any]] = []
+        seen: Set[str] = set()
+        for q in queries:
+            try:
+                res = await provider_search.search_boosted(query=q, topK=20, domains=domains, keywords=keywords)
+            except Exception:
+                continue
+            for r in (res.get("results") or [])[:20]:
+                url = r.get("url")
+                title = (r.get("title") or "").strip()
+                snippet = (r.get("snippet") or "").strip()
+                if not url or not title:
+                    continue
+                url_c = self._canonical_url(url)
+                if url_c in seen:
+                    continue
+                seen.add(url_c)
+                txt = f"{title} {snippet} {url}".lower()
+                if not self._is_mexico_item({"org": title, "role": title, "location": txt, "need": snippet, "source": url, "link": url}):
+                    continue
+                results.append({
+                    "org": title.split(" - ")[0][:128],
+                    "role": title,
+                    "location": "México",
+                    "need": snippet,
+                    "hours": "variable",
+                    "score": 0.55,
+                    "source": url_c,
+                    "link": url_c,
+                    "images": [],
+                    "posted_at": datetime.now().isoformat(),
+                })
         return results
 
     async def _source_ayuda_en_accion(self, filters: Dict[str, Any]) -> List[Dict[str, Any]]:
