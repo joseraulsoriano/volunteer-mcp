@@ -6,12 +6,27 @@ import uvicorn
 from datetime import datetime
 from typing import Dict, Any
 from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
+import os
+import json
+try:
+    import redis  # type: ignore
+except Exception:
+    redis = None
 
 # Cargar variables .env si existe localmente (en producción Railway se usan env vars)
 load_dotenv()
 from main import volunteer_mcp_server
 
 app = FastAPI(title="Volunteer MCP", version="1.0.0")
+
+# Redis opcional para blobs (persistencia entre deploys)
+_redis = None
+_redis_url = os.getenv("REDIS_URL") or ""
+if _redis_url and redis is not None:
+    try:
+        _redis = redis.Redis.from_url(_redis_url, decode_responses=True)
+    except Exception:
+        _redis = None
 
 app.add_middleware(
     CORSMiddleware,
@@ -103,32 +118,40 @@ async def learning_plan_get(data: Dict[str, Any]):
 @app.get("/education/enriched")
 async def education_enriched():
     try:
-        import json
-        import os
+        # 1) Redis
+        if _redis is not None:
+            raw = _redis.get("edu:enriched")
+            if raw:
+                data = json.loads(raw)
+                return {"success": True, "count": len(data) if isinstance(data, list) else 1, "data": data}
+        # 2) Archivo
         path = "data/edu_enriched.json"
-        if not os.path.exists(path):
-            return {"success": True, "count": 0, "data": []}
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return {"success": True, "count": len(data) if isinstance(data, list) else 1, "data": data}
         if isinstance(data, list):
             return {"success": True, "count": len(data), "data": data}
-        return {"success": True, "count": 1, "data": data}
+        return {"success": True, "count": 0, "data": []}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/education/details")
 async def education_details():
     try:
-        import json
-        import os
+        # 1) Redis
+        if _redis is not None:
+            raw = _redis.get("edu:details")
+            if raw:
+                data = json.loads(raw)
+                return {"success": True, "count": len(data) if isinstance(data, list) else 1, "data": data}
+        # 2) Archivo
         path = "data/edu_details.json"
-        if not os.path.exists(path):
-            return {"success": True, "count": 0, "data": []}
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        if isinstance(data, list):
-            return {"success": True, "count": len(data), "data": data}
-        return {"success": True, "count": 1, "data": data}
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return {"success": True, "count": len(data) if isinstance(data, list) else 1, "data": data}
+        return {"success": True, "count": 0, "data": []}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
