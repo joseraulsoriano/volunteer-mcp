@@ -100,6 +100,22 @@ async def learning_plan_save(data: Dict[str, Any]):
 async def learning_plan_get(data: Dict[str, Any]):
     return await volunteer_mcp_server.handle_request({"tool": "learning.plan.get", "params": data})
 
+@app.get("/education/enriched")
+async def education_enriched():
+    try:
+        import json
+        import os
+        path = "data/edu_enriched.json"
+        if not os.path.exists(path):
+            return {"success": True, "count": 0, "data": []}
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            return {"success": True, "count": len(data), "data": data}
+        return {"success": True, "count": 1, "data": data}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
     
 
 if __name__ == "__main__":
