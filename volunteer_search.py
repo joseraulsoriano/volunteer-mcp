@@ -257,7 +257,8 @@ class VolunteerSearch:
             href = a.get("href") or ""
             txt = a.get_text(strip=True).lower()
             if any(x in href for x in ["apply", "postular", "candidatar", "aplicar"]) or any(x in txt for x in ["aplica", "postula", "apply"]):
-                apply_link = href if href.startswith("http") else (f"https://worldpackers.com{href}" if href.startswith("/") else url)
+                raw = href if href.startswith("http") else (f"https://worldpackers.com{href}" if href.startswith("/") else url)
+                apply_link = self._canonical_url(raw)
                 break
 
         # armar resultado
@@ -669,6 +670,14 @@ class VolunteerSearch:
                     merged[k] = worse.get(k)
             by_key[link] = merged
         return list(by_key.values())
+
+    def _best_action_link(self, item: Dict[str, Any]) -> str:
+        candidates = [item.get("apply_link"), item.get("link"), item.get("source")]
+        for c in candidates:
+            u = self._canonical_url(c)
+            if u:
+                return u
+        return ""
 
     # Sources
     async def _source_gob_mx_voluntariado(self, filters: Dict[str, Any]) -> List[Dict[str, Any]]:
