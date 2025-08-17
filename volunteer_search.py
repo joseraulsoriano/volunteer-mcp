@@ -339,10 +339,10 @@ class VolunteerSearch:
         base = "https://www.onlinevolunteering.org"
         # Páginas de categorías o búsqueda general (IT/Software/Data)
         candidates = [
-            f"{base}/es/ oportunidades?search=software",
-            f"{base}/es/ oportunidades?search=it",
-            f"{base}/es/ oportunidades?search=data",
-            f"{base}/es/ oportunidades?search=engineering",
+            f"{base}/es/opportunities?search=software",
+            f"{base}/es/opportunities?search=it",
+            f"{base}/es/opportunities?search=data",
+            f"{base}/es/opportunities?search=engineering",
         ]
         results: List[Dict[str, Any]] = []
         seen: Set[str] = set()

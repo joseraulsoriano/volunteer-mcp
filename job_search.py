@@ -143,7 +143,8 @@ class JobSearch:
         career = params.get("career", "")
         location = params.get("location", "")
 
-        key = f"jobs.search:{json.dumps({"q": query, "k": topK, "a": area, "c": career, "l": location}, sort_keys=True, ensure_ascii=False)}"
+        key_data = {"q": query, "k": topK, "a": area, "c": career, "l": location}
+        key = "jobs.search:" + json.dumps(key_data, sort_keys=True, ensure_ascii=False)
         cached, fresh, _ = redis_cache.get_swr(key)
         if fresh and cached is not None:
             return {"success": True, **cached}
