@@ -116,6 +116,22 @@ async def education_enriched():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/education/details")
+async def education_details():
+    try:
+        import json
+        import os
+        path = "data/edu_details.json"
+        if not os.path.exists(path):
+            return {"success": True, "count": 0, "data": []}
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            return {"success": True, "count": len(data), "data": data}
+        return {"success": True, "count": 1, "data": data}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
     
 
 if __name__ == "__main__":
